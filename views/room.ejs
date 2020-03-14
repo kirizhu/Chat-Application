@@ -7,6 +7,7 @@
     <script>
         const roomName = "<%= roomName %>"
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="scripts.js"></script>
@@ -16,13 +17,16 @@
           margin: 0;
           display: flex;
           justify-content: center;
+          font-family: 'Baloo Chettan 2', cursive;
         }
         #message-container {
           width: 80%;
-          max-width: 1200px;
+          max-width: 600px;
           min-height: 3000px;
           overflow-y: scroll;
           scroll-behavior: smooth;
+          border: 1px solid rgb(191, 190, 190);
+          border-radius: 5px;
         }
         #message-container div {
           background-color: #d3d9e7;
@@ -36,7 +40,7 @@
           padding-bottom: 30px;
           bottom: 0;
           background-color: white;
-          max-width: 1200px;
+          max-width: 600px;
           width: 80%;
           display: flex;
         }
